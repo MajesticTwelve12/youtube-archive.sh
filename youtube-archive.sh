@@ -11,7 +11,7 @@ then
 fi
 
 download () {
-        local directory="/home/freshgum/YouTube Archives/$1"
+        local directory="/home/freshgum/YouTube Archives/$1" # Change this to where the script is being in run in, like /$USER/Videos/Youtube
         mkdir -p "$directory"
         pushd "$directory"
         # youtube-dl --download-archive https://youtube.com/$2 -o "%(title).%(ext)"
